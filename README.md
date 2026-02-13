@@ -1,4 +1,8 @@
-🎮 TOWER CLIMBER - Game Presentation     
+🕹️ TOWER CLIMBER
+Welcome to Tower Climber, a vertical arcade game developed in HTML, CSS, but above all in JavaScript. Defy gravity, jump from platform to platform, and beat your high score !
+
+You can play here:https://rafishds.github.io/TowerClimber/
+
 🌟 Overview
 
 Tower Climber is an endless vertical platformer game where players must jump from platform to platform, climbing as high as possible while avoiding falling off the screen. Built with pure JavaScript and HTML5 Canvas, this retro-styled arcade game features pixel-perfect physics and multiple platform types for engaging gameplay.
