@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tower Climber</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tower Climber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="app">
+    <canvas id="game" width="480" height="720"></canvas>
 
-    <div class="game-container">
-
-        <div id="ui">
-            SCORE: <span id="score">0</span>
-            <br>
-            RECORD: <span id="highscore">0</span>
-        </div>
-
-        <div id="comboUI" class="hidden">
-            COMBO x<span id="comboCount">0</span>
-        </div>
-
-        <canvas id="gameCanvas"></canvas>
-
-        <div id="overlay">
-            <h1>TOWER CLIMBER</h1>
-            <p>FLECHES pour bouger</p>
-            <p>ESPACE ou HAUT pour SAUTER</p>
-            <p><i>SAUTER POUR COMMENCER</i></p>
-        </div>
-
+    <!-- HUD en partie -->
+    <div id="hud" class="hidden">
+      <div id="hudCoins" class="hudbox"></div>
+      <div id="hudScore">0</div>
+      <div id="hudTimer"></div>
+      <div id="hudCombo"></div>
+      <div id="hudRecord"></div>
+      <div id="hudWind"></div>
+      <div id="hudPause"></div>
+      <div id="hudStart"></div>
     </div>
+
+    <!-- Hub : succès / accueil / casier / boutique -->
+    <section class="screen" id="hub">
+      <div id="hubTop">
+        <div id="hubCoins" class="hudbox"></div>
+        <button class="gear" id="btnSettings" aria-label="Paramètres"></button>
+      </div>
+      <div id="pageTitle"></div>
+      <div id="pageBody" class="scroll"></div>
+      <div id="dots"></div>
+      <div id="hubHint"></div>
+    </section>
+
+    <section class="screen" id="modes"></section>
+    <section class="screen overlay" id="settings"></section>
+    <section class="screen overlay" id="pause"></section>
+    <section class="screen overlay" id="cont"></section>
+    <section class="screen overlay" id="over"></section>
+    <section class="screen overlay" id="popup"></section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
